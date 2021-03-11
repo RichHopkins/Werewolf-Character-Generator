@@ -74,39 +74,43 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <ComboBox Grid.Column="0" x:Name="Physical" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="85">
+                    <ComboBox Grid.Column="0" x:Name="Physical" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="85">
                         <ComboBoxItem Content="Primary"/>
                         <ComboBoxItem Content="Secondary"/>
                         <ComboBoxItem Content="Tertiary"/>
                     </ComboBox>
-                    <ComboBox Grid.Column="1" x:Name="Social" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="85">
+                    <Label Grid.Column="0" x:Name="labelPhysical" Content="0 points left" HorizontalAlignment="Left" Margin="98,6,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Grid.Column="1" x:Name="Social" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="85">
                         <ComboBoxItem Content="Primary"/>
                         <ComboBoxItem Content="Secondary"/>
                         <ComboBoxItem Content="Tertiary"/>
                     </ComboBox>
-                    <ComboBox Grid.Column="2" x:Name="Mental" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="85">
+                    <Label Grid.Column="1" x:Name="labelSocial" Content="0 points left" HorizontalAlignment="Left" Margin="98,6,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Grid.Column="2" x:Name="Mental" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="85">
                         <ComboBoxItem Content="Primary"/>
                         <ComboBoxItem Content="Secondary"/>
                         <ComboBoxItem Content="Tertiary"/>
                     </ComboBox>
+                    <Label Grid.Column="2" x:Name="labelMental" Content="0 points left" HorizontalAlignment="Left" Margin="98,6,0,0" VerticalAlignment="Top"/>
                     <Label Grid.Column="0" Content="Strength" HorizontalAlignment="Left" Margin="8,40,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="0" HorizontalAlignment="Right" Margin="0,40,8,0" VerticalAlignment="Top" Value="1" x:Name="Str" ValueChanged="Str_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="0" HorizontalAlignment="Right" Margin="0,40,8,0" VerticalAlignment="Top" Value="1" x:Name="StrRating" ValueChanged="Str_ValueChanged" />
                     <Label Grid.Column="0" Content="Dexterity" HorizontalAlignment="Left" Margin="8,71,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="0" HorizontalAlignment="Right" Margin="0,71,8,0" VerticalAlignment="Top" Value="1" x:Name="Dex" ValueChanged="Dex_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="0" HorizontalAlignment="Right" Margin="0,71,8,0" VerticalAlignment="Top" Value="1" x:Name="DexRating" ValueChanged="Dex_ValueChanged" />
                     <Label Grid.Column="0" Content="Stamina" HorizontalAlignment="Left" Margin="8,102,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="0" HorizontalAlignment="Right" Margin="0,102,8,0" VerticalAlignment="Top" Value="1" x:Name="Con" ValueChanged="Sta_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="0" HorizontalAlignment="Right" Margin="0,102,8,0" VerticalAlignment="Top" Value="1" x:Name="ConRating" ValueChanged="Sta_ValueChanged" />
                     <Label Grid.Column="1" Content="Charisma" HorizontalAlignment="Left" Margin="8,40,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="1" HorizontalAlignment="Right" Margin="0,40,8,0" VerticalAlignment="Top" Value="1" x:Name="Cha" ValueChanged="Cha_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="1" HorizontalAlignment="Right" Margin="0,40,8,0" VerticalAlignment="Top" Value="1" x:Name="ChaRating" ValueChanged="Cha_ValueChanged" />
                     <Label Grid.Column="1" Content="Manipulation" HorizontalAlignment="Left" Margin="8,71,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="1" HorizontalAlignment="Right" Margin="0,71,8,0" VerticalAlignment="Top" Value="1" x:Name="Man" ValueChanged="Man_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="1" HorizontalAlignment="Right" Margin="0,71,8,0" VerticalAlignment="Top" Value="1" x:Name="ManRating" ValueChanged="Man_ValueChanged" />
                     <Label Grid.Column="1" Content="Appearance" HorizontalAlignment="Left" Margin="8,102,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="1" HorizontalAlignment="Right" Margin="0,102,8,0" VerticalAlignment="Top" Value="1" x:Name="App" ValueChanged="App_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="1" HorizontalAlignment="Right" Margin="0,102,8,0" VerticalAlignment="Top" Value="1" x:Name="AppRating" ValueChanged="App_ValueChanged" />
                     <Label Grid.Column="2" Content="Perception" HorizontalAlignment="Left" Margin="8,40,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="2" HorizontalAlignment="Right" Margin="0,40,8,0" VerticalAlignment="Top" Value="1" x:Name="Per" ValueChanged="Per_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="2" HorizontalAlignment="Right" Margin="0,40,8,0" VerticalAlignment="Top" Value="1" x:Name="PerRating" ValueChanged="Per_ValueChanged" />
                     <Label Grid.Column="2" Content="Intelligence" HorizontalAlignment="Left" Margin="8,71,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="2" HorizontalAlignment="Right" Margin="0,71,8,0" VerticalAlignment="Top" Value="1" x:Name="Int" ValueChanged="Int_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="2" HorizontalAlignment="Right" Margin="0,71,8,0" VerticalAlignment="Top" Value="1" x:Name="IntRating" ValueChanged="Int_ValueChanged" />
                     <Label Grid.Column="2" Content="Wits" HorizontalAlignment="Left" Margin="8,102,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="2" HorizontalAlignment="Right" Margin="0,102,8,0" VerticalAlignment="Top" Value="1" x:Name="Wit" ValueChanged="Wit_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="2" HorizontalAlignment="Right" Margin="0,102,8,0" VerticalAlignment="Top" Value="1" x:Name="WitRating" ValueChanged="Wit_ValueChanged" />
+                    
                 </Grid>
             </TabItem>
             <TabItem Header="Abilites">

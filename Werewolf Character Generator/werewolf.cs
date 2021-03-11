@@ -17,14 +17,38 @@ namespace Werewolf_Character_Generator
         public string PackName;
         public string PackTotem;
         public string Concept;
-        public byte Strength;
-        public byte Dexterity;
-        public byte Stamina;
-        public byte Charisma;
-        public byte Manipulation;
-        public byte Appearance;
-        public byte Perception;
-        public byte Intelligence;
-        public byte Wits;
+        public int Strength;
+        public int Dexterity;
+        public int Stamina;
+        public int Charisma;
+        public int Manipulation;
+        public int Appearance;
+        public int Perception;
+        public int Intelligence;
+        public int Wits;
+
+        public Werewolf() {
+        }
+
+        public Werewolf(string characterName, string playerName, string chronicle, string breed, string auspice, string tribe, string packName, string packTotem, string concept, int strength, int dexterity, int stamina, int charisma, int manipulation, int appearance, int perception, int intelligence, int wits) {
+            CharacterName = characterName;
+            PlayerName = playerName;
+            Chronicle = chronicle;
+            Breed = breed;
+            Auspice = auspice;
+            Tribe = tribe;
+            PackName = packName;
+            PackTotem = packTotem;
+            Concept = concept;
+            Strength = strength;
+            Dexterity = dexterity;
+            Stamina = stamina;
+            Charisma = charisma;
+            Manipulation = manipulation;
+            Appearance = appearance;
+            Perception = perception;
+            Intelligence = intelligence;
+            Wits = wits;
+        }
     }
 }

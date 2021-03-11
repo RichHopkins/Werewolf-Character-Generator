@@ -29,6 +29,10 @@ namespace Werewolf_Character_Generator
             
         }
 
+        public static void PrintToPDF() {
+        
+        }
+
         private void Str_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
             
@@ -126,8 +130,7 @@ namespace Werewolf_Character_Generator
         }
 
         private void OpenMenuItem_Click(object sender, RoutedEventArgs e) {
-            ClearAllFields();
-            Werewolf werewolf = new();
+
         }
 
         private void SaveMenuItem_Click(object sender, RoutedEventArgs e) {
@@ -135,7 +138,7 @@ namespace Werewolf_Character_Generator
         }
 
         private void PrintMenuItem_Click(object sender, RoutedEventArgs e) {
-
+            PrintToPDF();
         }
 
         private void ExitMenuItem_Click(object sender, RoutedEventArgs e) {
