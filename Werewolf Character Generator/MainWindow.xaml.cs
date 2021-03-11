@@ -28,17 +28,17 @@ namespace Werewolf_Character_Generator
 
         public static void ClearAllFields() 
         {
-
+            //Werewolf werewolf = new Werewolf();
         }
 
         public static void PrintToPDF() 
         {
-
+            
         }
 
         public static void OpenXMLFile()
         {
-
+            
         }
 
         public static void SaveXMLFile()
@@ -93,17 +93,21 @@ namespace Werewolf_Character_Generator
 
         private void Auspice_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            werewolf.Auspice = Auspice.Text;
+            ComboBoxItem item = (ComboBoxItem)Auspice.SelectedItem;
+            werewolf.Auspice = item.Content.ToString();
+
         }
 
         private void Breed_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            werewolf.Breed = Breed.Text;
+            ComboBoxItem item = (ComboBoxItem)Breed.SelectedItem;
+            werewolf.Breed = item.Content.ToString();
         }
 
         private void Tribe_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            werewolf.Tribe = Tribe.Text;
+            ComboBoxItem item = (ComboBoxItem)Tribe.SelectedItem;
+            werewolf.Tribe = item.Content.ToString();
         }
 
         private void CharacterName_TextChanged(object sender, TextChangedEventArgs e)
