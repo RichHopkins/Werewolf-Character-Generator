@@ -25,9 +25,13 @@ namespace Werewolf_Character_Generator
             InitializeComponent();
         }
 
+        public static void ClearAllFields() {
+            
+        }
+
         private void Str_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-
+            
         }
 
         private void Dex_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
@@ -113,6 +117,29 @@ namespace Werewolf_Character_Generator
         private void Concept_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void NewMenuItem_Click(object sender, RoutedEventArgs e) 
+        {
+            ClearAllFields();
+            Werewolf werewolf = new();
+        }
+
+        private void OpenMenuItem_Click(object sender, RoutedEventArgs e) {
+            ClearAllFields();
+            Werewolf werewolf = new();
+        }
+
+        private void SaveMenuItem_Click(object sender, RoutedEventArgs e) {
+
+        }
+
+        private void PrintMenuItem_Click(object sender, RoutedEventArgs e) {
+
+        }
+
+        private void ExitMenuItem_Click(object sender, RoutedEventArgs e) {
+            Application.Current.Shutdown();
         }
     }
 }
