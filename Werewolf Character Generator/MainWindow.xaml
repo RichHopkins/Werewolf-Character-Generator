@@ -97,7 +97,7 @@
                     <Label Grid.Column="0" Content="Dexterity" HorizontalAlignment="Left" Margin="8,71,0,0" VerticalAlignment="Top"/>
                     <materialDesign:RatingBar Grid.Column="0" HorizontalAlignment="Right" Margin="0,71,8,0" VerticalAlignment="Top" Value="1" x:Name="DexRating" ValueChanged="Dex_ValueChanged" />
                     <Label Grid.Column="0" Content="Stamina" HorizontalAlignment="Left" Margin="8,102,0,0" VerticalAlignment="Top"/>
-                    <materialDesign:RatingBar Grid.Column="0" HorizontalAlignment="Right" Margin="0,102,8,0" VerticalAlignment="Top" Value="1" x:Name="ConRating" ValueChanged="Sta_ValueChanged" />
+                    <materialDesign:RatingBar Grid.Column="0" HorizontalAlignment="Right" Margin="0,102,8,0" VerticalAlignment="Top" Value="1" x:Name="StaRating" ValueChanged="Sta_ValueChanged" />
                     <Label Grid.Column="1" Content="Charisma" HorizontalAlignment="Left" Margin="8,40,0,0" VerticalAlignment="Top"/>
                     <materialDesign:RatingBar Grid.Column="1" HorizontalAlignment="Right" Margin="0,40,8,0" VerticalAlignment="Top" Value="1" x:Name="ChaRating" ValueChanged="Cha_ValueChanged" />
                     <Label Grid.Column="1" Content="Manipulation" HorizontalAlignment="Left" Margin="8,71,0,0" VerticalAlignment="Top"/>
@@ -110,7 +110,6 @@
                     <materialDesign:RatingBar Grid.Column="2" HorizontalAlignment="Right" Margin="0,71,8,0" VerticalAlignment="Top" Value="1" x:Name="IntRating" ValueChanged="Int_ValueChanged" />
                     <Label Grid.Column="2" Content="Wits" HorizontalAlignment="Left" Margin="8,102,0,0" VerticalAlignment="Top"/>
                     <materialDesign:RatingBar Grid.Column="2" HorizontalAlignment="Right" Margin="0,102,8,0" VerticalAlignment="Top" Value="1" x:Name="WitRating" ValueChanged="Wit_ValueChanged" />
-                    
                 </Grid>
             </TabItem>
             <TabItem Header="Abilites">

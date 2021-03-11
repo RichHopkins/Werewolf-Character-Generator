@@ -20,121 +20,135 @@ namespace Werewolf_Character_Generator
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Werewolf werewolf = new Werewolf();
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        public static void ClearAllFields() {
-            
+        public static void ClearAllFields() 
+        {
+
         }
 
-        public static void PrintToPDF() {
-        
+        public static void PrintToPDF() 
+        {
+
+        }
+
+        public static void OpenXMLFile()
+        {
+
+        }
+
+        public static void SaveXMLFile()
+        {
+
         }
 
         private void Str_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-            
+            werewolf.Strength = StrRating.Value;
         }
 
         private void Dex_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-
+            werewolf.Dexterity = DexRating.Value;
         }
 
         private void Sta_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-
+            werewolf.Stamina = StaRating.Value;
         }
 
         private void Cha_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-
+            werewolf.Charisma = ChaRating.Value;
         }
 
         private void Man_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-
+            werewolf.Manipulation = ManRating.Value;
         }
 
         private void App_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-
+            werewolf.Appearance = AppRating.Value;
         }
 
         private void Per_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-
+            werewolf.Perception = PerRating.Value;
         }
 
         private void Int_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-
+            werewolf.Intelligence = IntRating.Value;
         }
 
         private void Wit_ValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
         {
-
+            werewolf.Wits = WitRating.Value;
         }
 
         private void Auspice_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            werewolf.Auspice = Auspice.Text;
         }
 
         private void Breed_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            werewolf.Breed = Breed.Text;
         }
 
         private void Tribe_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            werewolf.Tribe = Tribe.Text;
         }
 
         private void CharacterName_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            werewolf.CharacterName = CharacterName.Text;
         }
 
         private void PlayerName_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            werewolf.PlayerName = PlayerName.Text;
         }
 
         private void Chronicle_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            werewolf.Chronicle = Chronicle.Text; 
         }
-
+    
         private void PackName_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            werewolf.PackName = PackName.Text;
         }
 
         private void PackTotem_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            werewolf.PackTotem = PackTotem.Text;
         }
 
         private void Concept_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            werewolf.Concept = Concept.Text;
         }
 
-        private void NewMenuItem_Click(object sender, RoutedEventArgs e) 
+        private void NewMenuItem_Click(object sender, RoutedEventArgs e)
         {
             ClearAllFields();
-            Werewolf werewolf = new();
         }
 
-        private void OpenMenuItem_Click(object sender, RoutedEventArgs e) {
-
+        private void OpenMenuItem_Click(object sender, RoutedEventArgs e) 
+        {
+            OpenXMLFile();
         }
 
-        private void SaveMenuItem_Click(object sender, RoutedEventArgs e) {
-
+        private void SaveMenuItem_Click(object sender, RoutedEventArgs e) 
+        {
+            SaveXMLFile();
         }
 
         private void PrintMenuItem_Click(object sender, RoutedEventArgs e) {
