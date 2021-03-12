@@ -85,19 +85,19 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <ComboBox Grid.Column="0" x:Name="Physical" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="85">
+                    <ComboBox Grid.Column="0" x:Name="Physical" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="85" SelectionChanged="Physical_SelectionChanged">
                         <ComboBoxItem Content="Primary"/>
                         <ComboBoxItem Content="Secondary"/>
                         <ComboBoxItem Content="Tertiary"/>
                     </ComboBox>
                     <Label Grid.Column="0" x:Name="labelPhysical" Content="0 points left" HorizontalAlignment="Left" Margin="98,6,0,0" VerticalAlignment="Top"/>
-                    <ComboBox Grid.Column="1" x:Name="Social" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="85">
+                    <ComboBox Grid.Column="1" x:Name="Social" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="85" SelectionChanged="Social_SelectionChanged">
                         <ComboBoxItem Content="Primary"/>
                         <ComboBoxItem Content="Secondary"/>
                         <ComboBoxItem Content="Tertiary"/>
                     </ComboBox>
                     <Label Grid.Column="1" x:Name="labelSocial" Content="0 points left" HorizontalAlignment="Left" Margin="98,6,0,0" VerticalAlignment="Top"/>
-                    <ComboBox Grid.Column="2" x:Name="Mental" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="85">
+                    <ComboBox Grid.Column="2" x:Name="Mental" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="85" SelectionChanged="Mental_SelectionChanged">
                         <ComboBoxItem Content="Primary"/>
                         <ComboBoxItem Content="Secondary"/>
                         <ComboBoxItem Content="Tertiary"/>
